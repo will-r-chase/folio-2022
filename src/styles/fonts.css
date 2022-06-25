@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Forma DJR Text';
+	src: url('../../static/fonts/FormaDJRText-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Forma DJR Text';
+	src: url('../../static/fonts/FormaDJRText-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Forma DJR Deck';
+	src: url('../../static/fonts/FormaDJRDeck-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Forma DJR Deck';
+	src: url('../../static/fonts/FormaDJRDeck-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Forma DJR Display';
+	src: url('../../static/fonts/FormaDJRDisplay-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Forma DJR Display';
+	src: url('../../static/fonts/FormaDJRDisplay-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tekst Mono';
+	src: url('../../static/fonts/Tekst-MRoman.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

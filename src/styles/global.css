@@ -1,0 +1,82 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+html,
+body {
+	font-size: 16px;
+	background-color: var(--white95);
+	height: 100%;
+	width: 100%;
+}
+
+:root {
+	--black: #000000;
+	--black10: #1a1a1a;
+	--white: #ffffff;
+	--white98: #fcfbfa;
+	--white95: #f5f2ef;
+	--blue: #0589c7;
+	--orange: #ef8c64;
+	--pink: #ffa7cb;
+	--yellow: #fac950;
+	--light-yellow: #f4e65f;
+	--gold: #9e9243;
+	--green: #135538;
+}
+
+.caption {
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-family: 'Tekst Mono', monospace;
+	color: var(--black10);
+}
