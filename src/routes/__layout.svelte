@@ -61,6 +61,7 @@
     a, a:hover, a:focus, a:active {
      text-decoration: none;
      color: inherit;
+     text-align: center;
     }
 
     .breakout::before {

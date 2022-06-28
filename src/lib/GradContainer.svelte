@@ -18,5 +18,6 @@
         margin: 1.5rem;
         border-radius: 50px;
         background-blend-mode: soft-light;
+        display: grid;
     }
 </style>

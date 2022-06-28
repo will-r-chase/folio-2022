@@ -17,5 +17,10 @@
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"gsap": "^3.10.4",
+		"matter-js": "^0.18.0",
+		"svelte-canvas": "^0.7.1"
+	}
 }

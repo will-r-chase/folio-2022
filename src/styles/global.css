@@ -56,6 +56,7 @@ body {
 	background-color: var(--white95);
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 
 :root {
@@ -79,4 +80,8 @@ body {
 	letter-spacing: 0.05em;
 	font-family: 'Tekst Mono', monospace;
 	color: var(--black10);
+}
+
+#matter-js > canvas {
+	border-radius: 50px;
 }
