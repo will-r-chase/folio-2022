@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Remotely Triggered Earthquakes",
+    "link": "https://will-r-chase.github.io/eq_bw/",
+    "img": "earthquake"
+  },
+  {
+    "name": "Retired Hurricanes",
+    "link": "https://the-retired.netlify.app/",
+    "img": "hurricanes"
+  },
+  {
+    "name": "China Cities",
+    "link": "https://chinapower.csis.org/global-cities/",
+    "img": "china_cities"
+  },
+  {
+    "name": "China Eradicating Poverty",
+    "link": "https://chinapower.csis.org/poverty/",
+    "img": "china_poverty"
+  },
+  {
+    "name": "LinkedIn Green Jobs",
+    "link": "https://linkedin.github.io/global-green-report-2022/",
+    "img": "green_jobs"
+  },
+  {
+    "name": "LinkedIn Future of Skills",
+    "link": "https://linkedin.github.io/future-of-skills/",
+    "img": "skills"
+  },
+  {
+    "name": "Coronavirus Variant Tracker",
+    "link": "https://www.axios.com/variants-tracker",
+    "img": "variants"
+  },
+  {
+    "name": "Predatory Hospital Billing",
+    "link": "https://www.axios.com/hospital-billing",
+    "img": "hospitals"
+  },
+  {
+    "name": "What Americans are Googling",
+    "link": "https://www.axios.com/midterms-elections-2022-issues-americans-care/",
+    "img": "trends"
+  }
+]

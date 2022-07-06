@@ -5,17 +5,27 @@
     import {onMount} from 'svelte';
 
     onMount(() => {
-        const tl = gsap.timeline();
+        const tl = gsap.timeline(
+            {repeat: -1,
+            repeatDelay: 2});
 		const duration = 2.5;
 
         tl.to(".god", {
             duration,
             left: "50%",
-            repeat: -1,
-            repeatDelay: 2,
-            yoyo: true,
             ease: "linear",
-        })
+        }).to(".possum", {
+            duration: 0.5,
+            filter: "saturate(130%) brightness(1.2) drop-shadow(0px 0px 40px #F4E65F)"
+        }).to(".god", {
+            duration,
+            delay: 2,
+            left: "80%",
+            ease: "linear",
+        }).to(".possum", {
+            duration: 0.3,
+            filter: "saturate(2%) brightness(1) drop-shadow(0px 0px 0px #F4E65F)"
+        }, ">-2.3")
     })
 </script>
 
@@ -34,6 +44,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 40px;
+        filter: saturate(20%) brightness(1);
     }
     .god {
         position: absolute;

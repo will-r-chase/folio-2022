@@ -6,7 +6,9 @@
     let h;
         
     onMount(() => {
-        createScene(w, h);
+        setTimeout(() => {
+            createScene(w, h);
+        }, "1200")
     });
         
     function createScene(w, h) {
