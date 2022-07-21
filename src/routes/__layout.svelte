@@ -1,6 +1,7 @@
 <script>
     import '../styles/global.css';
     import '../styles/fonts.css';
+    import '../styles/code.css';
     import { page } from '$app/stores';
     import { scale } from 'svelte/transition';
 
@@ -34,23 +35,25 @@
 
 
 <!-- svelte-ignore a11y-mouse-events-have-key-events -->
-<nav class:expanded on:mouseover={handleMouseover} on:mouseleave={handleMouseout}>
-    {#if expanded}
-        <ul role="list" out:scale={{duration: 200, delay: 100}}>
-            <li in:scale={{duration: 200, delay: 200}}><a href="/" class="caption breakout">home</a></li>
-            <li in:scale={{duration: 200, delay: 225}}><a href="/projects" class="caption breakout">projects</a></li>
-            <li in:scale={{duration: 200, delay: 250}}><a href="/writing" class="caption breakout">writing</a></li>
-            <li in:scale={{duration: 200, delay: 275}}><a href="/about" class="caption breakout">about</a></li>
-            <li in:scale={{duration: 200, delay: 300}}><a href="/{lucky}" on:click={randomizeLuck} class="caption breakout">i'm feeling lucky</a></li>
-        </ul>
-        {:else}
-        <div class="menu" in:scale={{duration: 200, delay: 250}} out:scale={{duration: 200, delay: 50}}>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    {/if}
-</nav>
+
+    <nav class:expanded on:mouseover={handleMouseover} on:mouseleave={handleMouseout}>
+        {#if expanded}
+            <ul role="list" out:scale={{duration: 200, delay: 100}}>
+                <li in:scale={{duration: 200, delay: 200}}><a href="/" class="caption breakout">home</a></li>
+                <li in:scale={{duration: 200, delay: 225}}><a href="/projects" class="caption breakout">projects</a></li>
+                <li in:scale={{duration: 200, delay: 250}}><a href="/writing" class="caption breakout">writing</a></li>
+                <li in:scale={{duration: 200, delay: 275}}><a href="/about" class="caption breakout">about</a></li>
+                <li in:scale={{duration: 200, delay: 300}}><a href="/{lucky}" on:click={randomizeLuck} class="caption breakout">i'm feeling lucky</a></li>
+            </ul>
+            {:else}
+            <div class="menu" in:scale={{duration: 200, delay: 250}} out:scale={{duration: 200, delay: 50}}>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        {/if}
+    </nav>
+
 
 <main>
     <slot></slot>
@@ -59,11 +62,13 @@
 <style>
     main {
         width: 100%;
-        height: 100%;
+        height: 100vh;
+        display: inline-block;
+        position: relative;
     }
 
     nav {
-        position: absolute;
+        position: fixed;
         width: 75.5px;
         height: 75.5px;
         bottom: 5%;

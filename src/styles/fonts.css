@@ -41,3 +41,15 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Warbler Text';
+	src: url('../../static/fonts/WarblerText-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Warbler Text';
+	src: url('../../static/fonts/WarblerText-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}

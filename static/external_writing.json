@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Dataviz and the 20th Anniversary of R, an Interview With Hadley Wickham",
+    "date": "2020-04-06",
+    "link": "https://medium.com/nightingale/dataviz-and-the-20th-anniversary-of-r-an-interview-with-hadley-wickham-ea245078fc8a",
+    "post_type": "Article for Nightingale"
+  },
+  {
+    "name": "The generative art <--> dataviz spectrum",
+    "date": "2020-09-19",
+    "link": "https://buttondown.email/willchase/archive/the-generative-art-dataviz-spectrum/",
+    "post_type": "Newsletter"
+  },
+  {
+    "name": "Blending the traditional and the digital",
+    "date": "2020-12-25",
+    "link": "https://buttondown.email/willchase/archive/happy-holidays-plus-blending-the-traditional-and/",
+    "post_type": "Newsletter"
+  },
+  {
+    "name": "Dogma in dataviz",
+    "date": "2021-05-24",
+    "link": "https://buttondown.email/willchase/archive/dogma/",
+    "post_type": "Newsletter"
+  },
+  {
+    "name": "The Genres of Data Stories",
+    "date": "2022-02-28",
+    "link": "https://blog.elevatedataviz.com/the-types-of-data-stories/",
+    "post_type": "Article for Elevate"
+  },
+  {
+    "name": "Finding fonts that won’t break the budget",
+    "date": "2021-12-20",
+    "link": "https://blog.elevatedataviz.com/finding-fonts-that-wont-break-the-budget/",
+    "post_type": "Article for Elevate"
+  },
+  {
+    "name": "Do I need to learn D3?",
+    "date": "2021-10-11",
+    "link": "https://blog.elevatedataviz.com/do-i-need-to-learn-d3/",
+    "post_type": "Article for Elevate"
+  },
+  {
+    "name": "Why we need to wear better masks",
+    "date": "2022-01-11",
+    "link": "https://www.axios.com/2022/01/11/n95-mask-protection-covid",
+    "post_type": "Article for Axios"
+  },
+  {
+    "name": "How we'd float the boat",
+    "date": "2021-03-29",
+    "link": "https://www.axios.com/2021/03/29/suez-boat-rescue-methods",
+    "post_type": "Article for Axios"
+  }
+]

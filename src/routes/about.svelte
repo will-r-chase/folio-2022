@@ -31,6 +31,7 @@
         bottom: 0%;
         width: clamp(120px, 120px + 13vw, 270px);
         transform: translate(-50%, 0);
+        margin-bottom: 0;
     }
     .cactus1 {
         position: absolute;

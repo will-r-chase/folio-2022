@@ -66,6 +66,7 @@
         bottom: 0%;
         width: clamp(220px, 220px + 13vw, 500px);
         transform: translate(-50%, 0);
+        margin-bottom: 0;
     }
     .butte2 {
         position: absolute;

@@ -33,6 +33,7 @@ html:focus-within {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
 	text-decoration-skip-ink: auto;
+	color: var(--blue);
 }
 
 /* Make images easier to work with */
@@ -54,9 +55,7 @@ html,
 body {
 	font-size: 16px;
 	background-color: var(--white95);
-	height: 100%;
 	width: 100%;
-	overflow: hidden;
 }
 
 :root {
@@ -84,4 +83,119 @@ body {
 
 #matter-js > canvas {
 	border-radius: 50px;
+}
+
+/* blog styles */
+.blog > figure,
+img {
+	max-width: 700px;
+	margin: 0 auto 1.75rem auto;
+}
+
+.blog > h2 {
+	font-family: 'Forma DJR Deck', 'Helvetica', sans-serif;
+	font-size: 1.75rem;
+	font-weight: bold;
+	color: var(--black10);
+	max-width: 650px;
+	margin: 2rem auto 0.5rem auto;
+}
+.blog > h3 {
+	font-family: 'Forma DJR Deck', 'Helvetica', sans-serif;
+	font-size: 1.375rem;
+	font-weight: bold;
+	color: var(--black10);
+	max-width: 650px;
+	margin: 2rem auto 0.5rem auto;
+}
+.blog > p {
+	position: relative;
+	max-width: 650px;
+	margin: 0 auto 1.75rem auto;
+	font-family: 'Warbler Text', Georgia, serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	color: var(--black10);
+	z-index: 5;
+}
+.blog > p strong {
+	font-feature-settings: 'smcp';
+}
+.blog > aside strong {
+	font-feature-settings: 'smcp';
+}
+.blog > strong {
+	font-feature-settings: 'smcp';
+}
+.blog > pre {
+	max-width: 650px;
+	margin: 0 auto 1.5rem auto;
+	overflow-x: scroll;
+	font-family: 'Tekst Mono', monospace;
+	font-size: 1rem;
+}
+.blog > ul,
+.blog > ol {
+	max-width: 650px;
+	margin: 0 auto 1.5rem auto;
+	font-family: 'Forma DJR Text', 'Helvetica', sans-serif;
+	font-family: 'Warbler Text', Georgia, serif;
+	color: var(--black10);
+	font-size: 1.2rem;
+	line-height: 1.4;
+	padding-left: 2rem;
+	z-index: 5;
+	position: relative;
+}
+.blog > ul > li {
+	margin-bottom: 0.6rem;
+}
+
+p > code,
+a > code,
+aside > code,
+li > code {
+	font-family: 'Tekst Mono', monospace;
+	font-size: 1.125rem;
+	background-color: #dcecf3;
+	background-color: var(--white95);
+	border-radius: 4px;
+	padding: 2px 5px 2px 5px;
+}
+
+aside {
+	font-family: 'Forma DJR Text', 'Helvetica', sans-serif;
+	color: var(--black10);
+	font-size: 1.2rem;
+	line-height: 1.4;
+	max-width: 650px;
+	margin: 0 auto 1.5rem auto;
+	background-color: #dcecf3;
+	border-radius: 30px;
+	padding: 1.25rem;
+}
+
+.blog > figure figcaption {
+	font-family: 'Forma DJR Text', 'Helvetica', sans-serif;
+	text-align: center;
+	color: #808080;
+	font-size: 1rem;
+	letter-spacing: 0.02em;
+}
+.blog-title {
+	font-family: 'Forma DJR Display', 'Helvetica', sans-serif;
+	font-size: 2.5rem;
+	max-width: 900px;
+	margin: 1rem auto 2rem auto;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+}
+.blog > .date {
+	font-family: 'Tekst Mono', monospace;
+	font-size: 1.25rem;
+	max-width: 900px;
+	margin: 1rem auto 2rem auto;
+	text-align: center;
+	color: var(--black10);
 }

@@ -1,6 +1,22 @@
+<script>
+    import {fade} from 'svelte/transition';
+    import {expoOut} from 'svelte/easing';
+    import { navigating } from '$app/stores';
 
-<img src="/img/home_title.svg" alt="Will Chase">
-<div class="bg"></div>
+
+    let delay = 0;
+
+    $: if($navigating) {
+        if($navigating.from.pathname != "/") {
+            delay = 500;
+        } 
+    }
+</script>
+
+
+<div class="bg" in:fade={{duration: 700, delay, easing: expoOut}}>
+    <img src="/img/home_title.svg" alt="Will Chase">
+</div>
 
 <style>
     .bg {

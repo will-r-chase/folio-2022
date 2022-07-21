@@ -3,7 +3,7 @@
     export let direction = 'down';
     import { fade, scale } from 'svelte/transition';
     import { navigating } from '$app/stores';
-    import { expoInOut, backOut, backIn } from 'svelte/easing';
+    import { expoInOut, backOut, backIn, elasticOut } from 'svelte/easing';
     //orange #EF8C64
     //pink #FFA7CB
     //yellow #FAC950
@@ -58,7 +58,7 @@
     
 </script>
 
-<article in:scale={{duration: 800, delay: outDuration, opacity: 1, easing: expoInOut}} out:scale={{duration: outDuration, opacity: 1, easing: backIn}} style="background: url('/img/noise.png'), linear-gradient({direction == "down" ? '180deg' : '360deg'}, {color} 0%, rgba(202, 210, 204, 0.44) 100%);">
+<article in:scale={{duration: 500, delay: outDuration, opacity: 1, easing: backOut}} out:scale={{duration: outDuration, opacity: 1, easing: backIn}} style="background: url('/img/noise.png'), linear-gradient({direction == "down" ? '180deg' : '360deg'}, {color} 0%, rgba(202, 210, 204, 0.44) 100%);">
     <slot></slot>
     <!-- <div class="cover" in:tweenIn out:tweenOut></div> -->
 </article>
