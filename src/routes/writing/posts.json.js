@@ -20,16 +20,16 @@ export async function get() {
 				title: metadata.title,
 				date_raw: new Date(metadata.date),
 				date: new Date(metadata.date).toLocaleDateString('en-us', { year:"numeric", month:"long", day:"numeric"}),
-				summary: metadata.summary,
+				summary: metadata.teaser,
                 post_type: metadata.post_type,
-                preview: `/img/blog/${metadata.img}`,
+                image: metadata.img,
 				slug: basename(filename, ".svx") // Generate a slug we can link to
 			}
 		}
 	)
 
 	// Sort posts by descending date
-	posts.sort((a, b) => (a.date > b.date ? -1 : 1))
+	//posts.sort((a, b) => (a.date_raw - b.date_raw))
 
 	return {
 		body: { posts }

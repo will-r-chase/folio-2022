@@ -1,8 +1,18 @@
 <script>
     export let title;
     export let date;
+    export let summary;
+    export let image;
     export let color = "#0589C7";
+    // #1E8859 green
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta property="og:title" content={title}/>
+  <meta property="og:description" content="{summary}"/>
+  <meta property="og:image" content="/img/blog/{image}" />
+</svelte:head>
 
 <div class="blog-bg" style="background: url('/img/noise.png'), linear-gradient(180deg, {color} 0%, rgba(202, 210, 204, 0.44) 100%);">
   <article class="blog">

@@ -1,9 +1,9 @@
 ---
 title: Scrollytelling with GSAP ScrollTrigger
 date: 2020-06-07
-teaser: "This tutorial walks through using the brand new ScrollTrigger plugin for the GSAP animation library build scroll interactions and animations for dataviz. I think ScrollTrigger will be the go-to library for scrollytelling and stands to take over how data stories are coded."
+summary: "This tutorial walks through using the brand new ScrollTrigger plugin for the GSAP animation library build scroll interactions and animations for dataviz. I think ScrollTrigger will be the go-to library for scrollytelling and stands to take over how data stories are coded."
 image: "scroll_trigger_teaser.png"
-post_type: Blog
+post_type: Blog post
 ---
 
 <aside>WARNING this tutorial is pretty out of date, maybe it's still helpful, but ScrollTrigger has definitely changed things since I wrote this. Use at your own risk.</aside>
@@ -15,7 +15,7 @@ There's lots of ways to do scrollytelling in JavaScript, but probably the most p
 
 
 <a href="../../scroll_trigger_demo/index.html" target="_blank">
-<img src="/img/blog/scroll_trigger_teaser.png" style="border: 1px solid black;">
+<img src="/img/blog/scroll_trigger_teaser.png" style="border: 1px solid black; margin: auto;">
 </a>
 <h2 style="text-align:center;"><a href="../../scroll_trigger_demo/index.html" target="_blank">See the demo ↗</a></h2>
 

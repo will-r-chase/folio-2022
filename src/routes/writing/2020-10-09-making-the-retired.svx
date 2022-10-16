@@ -3,7 +3,7 @@ title: Making 'The Retired'
 date: 2020-10-09
 summary: "A case study of my data essay on retired hurricane names. I walk through the design and development process with behind-the-scenes details."
 image: "retired_teaser.jpg"
-post_type: Blog
+post_type: Blog post
 ---
 
 One year ago, in October 2019, the U.S. was experiencing one of the most active hurricane seasons of the last 50 years. Hurricanes are named alphabetically after people (Bob, Olga, etc.), and as we quickly exhausted the A, B, C's and got into the L, M, N, O, P's, I started to wonder exactly how these names were decided. I researched the tumultuous past of hurricane naming, learned how our modern system uses six lists that recycle, and how particularly damaging storms are "retired" so the name is taken out of circulation. Eventually, I followed the trail of breadcrumbs on Wikipedia to a page called "List of Retired Atlantic Hurricane Names". The page was filled with tables containing all sorts of statistics on all retired storms in Atlantic history, and I dove in like a kid on Christmas morning.

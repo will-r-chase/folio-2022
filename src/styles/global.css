@@ -87,9 +87,10 @@ body {
 
 /* blog styles */
 .blog > figure,
-img {
+.blog > img {
 	max-width: 700px;
 	margin: 0 auto 1.75rem auto;
+	border-radius: 30px;
 }
 
 .blog > h2 {
@@ -149,6 +150,19 @@ img {
 }
 .blog > ul > li {
 	margin-bottom: 0.6rem;
+}
+
+.blog > blockquote {
+	max-width: 600px;
+	margin: 0 auto 1.5rem auto;
+	font-family: 'Warbler Text', Georgia, serif;
+	color: var(--black10);
+	font-size: 1.15rem;
+	line-height: 1.4;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-style: italic;
+	border-left: 2px solid var(--black10);
 }
 
 p > code,

@@ -1,9 +1,9 @@
 ---
 title: Grid (12 Months of aRt, December)
-date: '2020-09-13'
+date: 2020-09-13
 teaser: "We walk through the development of my final generative system in my 12 Months of aRt project, building artwork based on a grid that becomes distorted in specific areas."
 image: "grid_teaser.jpg"
-post_type: Blog
+post_type: Blog post
 ---
 
 ## It's not December
@@ -13,7 +13,7 @@ Hi there, remember this? Way back in The Before Times I did this project called 
 ## The inspiration
 Sometimes inspiration comes from nature, other times from art, and in this case it came from fashion. I have this jacket from Adidas that has a design with a regular grid, overlaid with random looking rectangles. I don't know if the design is generative, but it certainly has generative vibes and it immediately gave me an idea. I imagined a system based on two primary components: a grid and a set of polygons. The grid could be manipulated to have any number of rows or columns with different spacing and sizing, and the polygons could be any regular polygon (not just rectangles). The twist was that I would be able to distort the grid as it passed through the polygons.
 
-<img src="/img/grid_jacket.jpg">
+<img src="/img/blog/grid_jacket.jpg">
 
 ## The code
 Let me begin by saying the code for this is unfinished. The system works and does what I want (mostly) but there are some known bugs, and several items on the to-do list for adding new features. That said, I think this is an excellent system to end my 12 Months of aRt project on, because it incorporates and remixes many techniques and pieces of code from previous projects.
@@ -47,7 +47,7 @@ ggplot() +
   geom_path(data = new_grid$grid, aes(x = x, y = y, group = line), size = 0.4)
 ```
 
-<img src="/img/simple_grid.png">
+<img src="/img/blog/simple_grid.png">
 
 
 ### Adding polygons
@@ -129,7 +129,7 @@ ggplot() +
   theme_void()
 ```
 
-<img src="/img/rects_flow_1.png">
+<img src="/img/blog/rects_flow_1.png">
 
 The final bit I added to this system was a lens distortion. I got the original idea from looking at pictures made with a fisheye lens, and you might know the distortion by that name, but it turns out that type of effect is generally called a barrel distortion. Researching how to apply this type of distortion led me down a total rabbit hole into math and photography forums. It turns out there's a lot of ways to do this, and it's quite a big problem in the optics field. You can find many different models of lens distortion, unfortunately most of the implementations I found were ways to correct it, and what I want to do is the opposite. After some tinkering I finally got the math right (at least I think I did), and the nice thing about this method is that you can adjust the parameters to apply either a barrel distortion, or a pincushion distortion. 
 

@@ -3,11 +3,11 @@ title: Why I'm not making COVID19 visualizations, and why you (probably) shouldn
 date: 2020-03-31
 teaser: "The novel coronavirus SARS-CoV-2 is spreading across the globe at an unprecedented rate. Along with the virus, there's been an accompanying spread of visualizations. In this post, I discuss why I'm not visualizing statistics on COVID19, and why you probably shouldn't either."
 image: "covid_teaser.png"
-post_type: Blog
+post_type: Blog post
 ---
 
 <aside>Ahoy, this is Will from the future. These days much has changed and I've now made hundreds of COVID charts. I still recommend you use care with any data relating to humans and healthcare, but much of this post is no longer relevant given the quality of our data and the place we're now at, but I'll leave it up as a historical artifact. Enjoy!</aside>
----
+
 
 While I write this post--from lockdown during a shelter-in-place order--the novel coronavirus SARS-CoV-2* is spreading across the globe at an unprecedented rate. Along with the virus, there's been an accompanying spread of visualizations. However, I have been conspicuously quiet on the subject, until now. Not to brag, but compared to most visualization experts, I think I'm pretty qualified on the subject. I did my undergraduate degree in microbiology, where I focused on virology, microbial evolution, and epidemiology of infectious disease. After graduating, I worked as a research analyst for an epidemiologist where I focused on data analysis and visualization of epidemiological studies. Since then I've become a full-time data visualization specialist.
 <aside>*The virus itself is called SARS-CoV-2 (Severe Respiratory Syndrome Coronavirus 2), the disease that it causes is called COVID-19 (Coronavirus Disease of 2019)</aside>

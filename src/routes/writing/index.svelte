@@ -36,9 +36,21 @@
         }
     })
 
-    const posts_combined = [...posts.posts, ...writing2].sort((a, b) => (a.date_raw - b.date_raw)).reverse()
+    const posts2 = posts.posts.map(d => {
+        return {
+            title: d.title,
+            post_type: d.post_type,
+            date_raw: new Date(d.date_raw),
+            date: d.date,
+            summary: d.summary,
+            image: d.image,
+            slug: d.slug
+        }
+    })
 
-    console.log(posts_combined)
+    const posts_combined = [...posts2, ...writing2].sort((a, b) => (a.date_raw - b.date_raw)).reverse()
+
+    //console.log(posts_combined)
 </script>
 
 <GradContainer direction="up">
