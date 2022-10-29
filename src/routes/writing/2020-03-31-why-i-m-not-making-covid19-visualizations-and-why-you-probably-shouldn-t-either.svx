@@ -1,5 +1,5 @@
 ---
-title: Why I'm not making COVID19 visualizations, and why you (probably) shouldn't either
+title: Why I’m not making COVID19 visualizations, and why you (probably) shouldn't either
 date: 2020-03-31
 teaser: "The novel coronavirus SARS-CoV-2 is spreading across the globe at an unprecedented rate. Along with the virus, there's been an accompanying spread of visualizations. In this post, I discuss why I'm not visualizing statistics on COVID19, and why you probably shouldn't either."
 image: "covid_teaser.png"

@@ -1,5 +1,5 @@
 ---
-title: Making 'The Retired'
+title: Making ‘The Retired’
 date: 2020-10-09
 summary: "A case study of my data essay on retired hurricane names. I walk through the design and development process with behind-the-scenes details."
 image: "retired_teaser.jpg"

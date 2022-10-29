@@ -10,7 +10,7 @@
     <img src="/img/buttes2.png" alt="A butte" class="butte2">
     <ul role='list' class="grid-wrapper">
         {#each projects as project}
-            <li class="project" style="background-image: url('/img/thumbnails/{project.img}.jpg')"><a href="{project.link}">{project.name}</a></li>
+            <li class="project" style="background-image: url('/img/thumbnails/{project.img}.jpg')"><a data-content="{project.name}" href="{project.link}">{project.name}</a></li>
         {/each}
     </ul>
 </GradContainer>
@@ -41,14 +41,24 @@
     }
     a {
         font-family: "Forma DJR Display", "Helvetica", sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
         font-weight: bold;
         line-height: 1.2em;
         color: var(--white98);
-        -webkit-text-stroke: 1.5px var(--black10);
+        position: relative;
+        z-index: 0;
+        /* -webkit-text-stroke: 1.5px var(--black10); */
+    }
+    a::after {
+        content: attr(data-content);
+        position: absolute;
+        -webkit-text-stroke: 0.1em var(--black);
+        left: 0;
+        top: 0;
+        z-index: -1;
     }
     a::before {
         content: '';
