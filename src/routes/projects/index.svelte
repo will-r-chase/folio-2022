@@ -10,7 +10,10 @@
     <img src="/img/buttes2.png" alt="A butte" class="butte2">
     <ul role='list' class="grid-wrapper">
         {#each projects as project}
-            <li class="project" style="background-image: url('/img/thumbnails/{project.img}.jpg')"><a data-content="{project.name}" href="{project.link}">{project.name}</a></li>
+            <li class="project" style="background-image: url('/img/thumbnails/{project.img}.jpg')">
+                <span data-content="{project.name}" href="{project.link}">{project.name}</span>
+                <a href="{project.link}"></a>
+            </li>
         {/each}
     </ul>
 </GradContainer>
@@ -33,13 +36,14 @@
         border-radius: 30px;
         display: grid;
         place-items: center;
+        grid-template-rows: 1fr 0;
         padding: 0.8rem;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
     }
-    a {
+    span {
         font-family: "Forma DJR Display", "Helvetica", sans-serif;
         font-size: 2rem;
         text-transform: uppercase;
@@ -50,9 +54,8 @@
         color: var(--white98);
         position: relative;
         z-index: 0;
-        /* -webkit-text-stroke: 1.5px var(--black10); */
     }
-    a::after {
+    span::after {
         content: attr(data-content);
         position: absolute;
         -webkit-text-stroke: 0.1em var(--black);
@@ -60,14 +63,20 @@
         top: 0;
         z-index: -1;
     }
+    a {
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
     a::before {
         content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .butte1 {

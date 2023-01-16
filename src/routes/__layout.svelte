@@ -43,7 +43,7 @@
                 <li in:scale={{duration: 200, delay: 225}}><a href="/projects" class="caption breakout">projects</a></li>
                 <li in:scale={{duration: 200, delay: 250}}><a href="/writing" class="caption breakout">writing</a></li>
                 <li in:scale={{duration: 200, delay: 275}}><a href="/about" class="caption breakout">about</a></li>
-                <li in:scale={{duration: 200, delay: 300}}><a href="/{lucky}" on:click={randomizeLuck} class="caption breakout">i'm feeling lucky</a></li>
+                <li in:scale={{duration: 200, delay: 300}}><a href="/{lucky}" on:click={randomizeLuck} class="caption breakout">press me</a></li>
             </ul>
             {:else}
             <div class="menu" in:scale={{duration: 200, delay: 250}} out:scale={{duration: 200, delay: 50}}>
@@ -92,6 +92,7 @@
     ul {
         display: flex;
         flex-direction: row;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         align-items: center;
         margin: 16px 48px;
@@ -101,7 +102,7 @@
     li {
         background: var(--white98);
         border-radius: 999px;
-        padding: 12px 32px;
+        padding: 12px clamp(12px, 12px + 1vw, 32px);
         position: relative;
         white-space: nowrap;
     }
@@ -125,18 +126,18 @@
     }
 
     a, a:hover, a:focus, a:active {
-     text-decoration: none;
-     color: inherit;
-     text-align: center;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
     }
 
     .breakout::before {
         content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 </style>
